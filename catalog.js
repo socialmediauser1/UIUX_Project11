@@ -3,85 +3,73 @@ const catalogCards = [
     id: 1,
     title: "Bespoke Suits",
     description: "Tailored to perfection with premium wool, linen, or cashmere.",
-    imageUrl: "catalog1.png",
-    link: "#"
+    imageUrl: "catalog1.png"
   },
   {
     id: 2,
     title: "Custom Shirts",
     description: "Crafted for an impeccable fit, available in fine cotton and silk blends.",
-    imageUrl: "catalog2.png",
-    link: "#"
+    imageUrl: "catalog2.png"
   },
   {
     id: 3,
     title: "Tailored Jackets & Coats",
     description: "Designed for warmth and sophistication.",
-    imageUrl: "catalog3.png",
-    link: "#"
+    imageUrl: "catalog3.png"
   },
   {
     id: 4,
     title: "Formal & Business Wear",
     description: "Elevate your professional and evening look.",
-    imageUrl: "catalog4.png",
-    link: "#"
+    imageUrl: "catalog4.png"
   },
   {
     id: 5,
     title: "Elegant Dresses & Gowns",
     description: "Handcrafted with exquisite fabrics and detailing.",
-    imageUrl: "catalog5.png",
-    link: "#"
+    imageUrl: "catalog5.png"
   },
   {
     id: 6,
     title: "Tailored Blouses & Shirts",
     description: "Designed for both professional and casual elegance.",
-    imageUrl: "catalog6.png",
-    link: "#"
+    imageUrl: "catalog6.png"
   },
   {
     id: 7,
     title: "Custom Outerwear",
     description: "Chic, comfortable, and made to fit perfectly.",
-    imageUrl: "catalog7.png",
-    link: "#"
+    imageUrl: "catalog7.png"
   },
   {
     id: 8,
     title: "Linen & Casual Wear",
     description: "Lightweight and breathable, ideal for everyday fashion.",
-    imageUrl: "catalog8.png",
-    link: "#"
+    imageUrl: "catalog8.png"
   },
   {
     id: 9,
     title: "Luxury Handwoven Dresses",
     description: "Unique, artisan-crafted garments with intricate detailing.",
-    imageUrl: "catalog9.png",
-    link: "#"
+    imageUrl: "catalog9.png"
   },
   {
     id: 10,
     title: "Embroidered Jackets",
     description: "Custom embroidery and hand-stitched precision.",
-    imageUrl: "catalog10.png",
-    link: "#"
+    imageUrl: "catalog10.png"
   },
   {
     id: 11,
     title: "Premium Trousers & Skirts",
     description: "Made with high-quality fabric and tailored to your measurements.",
-    imageUrl: "catalog11.png",
-    link: "#"
+    imageUrl: "catalog11.png"
   },
   {
     id: 12,
     title: "Bridal & Occasion Wear",
     description: "Custom wedding gowns, bridesmaid dresses, and formal suits.",
-    imageUrl: "catalog12.png",
-    link: "#"
+    imageUrl: "catalog12.png"
   }
 ];
 
@@ -112,11 +100,6 @@ function renderCatalogCards(cards) {
     const button = document.createElement('button');
     button.classList.add('blog-button');
     button.textContent = 'Explore';
-    button.onclick = () => {
-      if (card.link) {
-        window.location.href = card.link;
-      }
-    };
 
     contentDiv.appendChild(title);
     contentDiv.appendChild(description);
